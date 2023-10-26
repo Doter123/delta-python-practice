@@ -1,16 +1,29 @@
 word1 = "abc"
 word2 = "pqr"
 
-index_1, index_2 = 0, 0
-
+i = 0
 result = ''
 
-while index_1 < len(word1) or index_2 < len(word2):
-    if index_1 < len(word1):
-        result += word1[index_1]
-    if index_2 < len(word2):
-        result += word2[index_2]
-    index_1 += 1
-    index_2 += 1
+while i < len(word1) or i < len(word2):
 
+    if i < len(word1):
+        result += word1[i]
+
+    if i < len(word2):
+        result += word2[i]
+
+    i += 1
+
+print(result)
+
+# ===================
+
+result = ""
+
+for i in range(max(len(word1),len(word2))):
+    if i < len(word1):
+        result += word1[i]
+    if i < len(word2):
+        result += word2[i]
+    
 print(result)

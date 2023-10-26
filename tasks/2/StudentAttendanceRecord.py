@@ -5,10 +5,10 @@ result = True
 absent_count = 0
 late_count = 0
 
-for i in string:
-    if i == 'A':
+for char in string:
+    if char == 'A':
         absent_count += 1
-    if i == 'L':
+    if char == 'L':
         late_count += 1
     else:
         late_count = 0
@@ -18,4 +18,4 @@ for i in string:
         break
 
 print(result)
-print(string.count('A') < 2 and 'LLL' not in string)
+print(string.count("A") < 2 and "LLL" not in string)

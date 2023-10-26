@@ -1,12 +1,10 @@
-s = "abc"
-t = "ahbgdc"
+word = "abc"
+string = "ahbgdc"
 
-charArray = list(s)[::-1]
-
-for i in t:
-    if charArray and i == charArray[-1]:
-        charArray.pop()
-    if len(charArray) == 0:
+for character in string:
+    if word != '' and character == word[0]:
+        word = word[1:]
+    if len(word) == 0:
         break
 
-print(len(charArray) == 0)
+print(len(word) == 0)
