@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 numbers = [4,1,2,1,2]
 
 temp_object = {}
@@ -19,20 +13,3 @@ for i in temp_object:
     if temp_object[i] == 1:
         print(i)
         break
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
