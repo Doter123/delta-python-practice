@@ -1,14 +1,15 @@
-numRows = 5
+numRows = 6
 result = []
 
-for index in range(numRows):
+for index in range(numRows): # 0 ... -> 5
 
     temp_array = [1]
 
     if index > 1:
-        for j in range(index - 1):
-            first_num = result[index - 1][j]
-            second_num = result[index - 1][j + 1]
+        last_level = result[index - 1]
+        for j in range(len(last_level) - 1):
+            first_num = last_level[j]
+            second_num = last_level[j + 1]
             temp_array.append(first_num + second_num)
 
     if index != 0:
@@ -16,44 +17,4 @@ for index in range(numRows):
 
     result.append(temp_array)
 
-print(result)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(*result, sep='\n')

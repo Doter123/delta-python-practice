@@ -1,8 +1,3 @@
-
-
-
-
-
 haystack = 'bsadutsad'
 needle = 'sad'
 result = -1
@@ -21,37 +16,7 @@ print(result)
 
 print(haystack.find(needle))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# result = haystack.find(needle)
+# ============================================
 
 # nums = [1,3,5,6]
 # target = 5
