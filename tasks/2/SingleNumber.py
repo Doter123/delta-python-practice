@@ -13,3 +13,14 @@ for i in temp_object:
     if temp_object[i] == 1:
         print(i)
         break
+
+
+
+# ========================
+
+ans = 0
+
+for num in nums:
+    ans ^= num
+
+return ans
