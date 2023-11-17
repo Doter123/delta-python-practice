@@ -1,6 +1,12 @@
-from typing import List
+# https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/1099825071/
 
-def maxProfit(prices: List[int]) -> int:
+# Вам дан массив prices, там храняться цены акции на текущий день
+# Вы хотите максимизировать свою прибыль, выбрав один день для покупки одной акции и выбрав другой день в будущем для продажи этой акции.
+
+# Верните максимальную прибыль, которую вы можете получить от этой сделки. Если вы не можете получить никакой прибыли, верните '0'.
+
+
+def maxProfit(prices: [int]) -> int:
     max_profit = 0
     min_price = prices[0]
 
