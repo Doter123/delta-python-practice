@@ -1,4 +1,4 @@
-word1 = "abc"
+word1 = "abchgfdhgf"
 word2 = "pqr"
 
 i = 0
@@ -20,7 +20,9 @@ print(result)
 
 result = ""
 
-for i in range(max(len(word1),len(word2))):
+maximum = max(len(word1),3)
+
+for i in range(maximum):
     if i < len(word1):
         result += word1[i]
     if i < len(word2):

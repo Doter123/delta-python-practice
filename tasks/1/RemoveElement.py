@@ -15,7 +15,8 @@ print(len(numbers), numbers) # 4 [2, 2, 4, 2]
 
 
 
-while value in numbers:
-	numbers.remove(value)
+while 3 in numbers:
+	numbers.remove(3)
+	print('deteted')
 
 print(len(numbers), numbers) # 4 [2, 2, 4, 2]

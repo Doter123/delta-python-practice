@@ -1,10 +1,14 @@
-word = "abc"
-string = "ahbgdc"
+word = "acbi"
+string = "ahbgdcopi"
 
 for character in string:
-    if word != '' and character == word[0]:
-        word = word[1:]
-    if len(word) == 0:
+    if word == '':
         break
+    if character == word[0]:
+        print('word =', word)
+        word = word[1:]
+        print('word =', word)
 
-print(len(word) == 0)
+
+
+print(len(word) == 0, word, len(word))

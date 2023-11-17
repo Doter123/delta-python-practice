@@ -7,24 +7,26 @@
 # Открытые скобки должны закрываться скобками того же типа.
 # Открытые скобки должны закрываться в правильном порядке.
 
-string = '()[]{}'
+string = '()[]{}' # True
+# string = '{' # False
+# string = '({)' # False
+# string = '({]]' # False
+# string = '([]{)}' # False
+# string = '([]{)}' # False
 
-opened = []
-close_to_open = {
+stack = []
+obj = {
     ')': '(',
     ']': '[',
     '}': '{',
 }
 
-for i in range(len(string)):
-    char = string[i]
+for char in string:
     if char == '(' or char == '{' or char == '[':
-        opened.append(char)
-    else:
-        if opened[-1] == close_to_open[char]:
-            opened.pop()
-        else:
-            break
+        stack.append(char)
+    elif stack[-1] == obj[char]:
+        stack.pop()
+    elif: return False
 
 
-print(len(opened) == 0)
+print(len(stack) == 0)

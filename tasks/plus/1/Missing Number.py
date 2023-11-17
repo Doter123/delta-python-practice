@@ -3,10 +3,9 @@
 from typing import List
 
 def missingNumber(nums: List[int]) -> int:
-    nums_set = set(nums)
     length = len(nums) + 1
     for num in range(length):
-        if num not in nums_set: return num
+        if num not in nums: return num
 
     # - Explanation: sum(range(nums-length + 1)) - sum(nums)
     #return sum(range(len(nums)+1))-sum(nums)
