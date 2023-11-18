@@ -1,5 +1,5 @@
-haystack = 'badutsadhf' # length = 9
-needle = 'sad' # length = 3
+haystack = "leetcode" # length = 9
+needle = "leeto" # length = 3
 result = -1
 
 print(len(haystack) - len(needle)) # 6
