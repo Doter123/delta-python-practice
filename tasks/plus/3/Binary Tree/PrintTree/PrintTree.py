@@ -1,4 +1,24 @@
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    def Test(arg, expected):
+        print((bcolors.OKGREEN if arg == expected else bcolors.FAIL) + str(arg) + bcolors.ENDC)
+        print('-'*35)
+    def Bold(arg):
+        print(bcolors.BOLD + str(arg) + bcolors.ENDC)
+
 def PrintTree(root):
+    
+    print(bcolors.BOLD, end="")
+
     def height(root):
         return 1 + max(height(root.left), height(root.right)) if root else -1  
     nlevels = height(root)
@@ -36,3 +56,6 @@ def PrintTree(root):
             pre = n[2]
         print(linestr)
         print(pstr)
+
+
+    print(bcolors.ENDC, end="")
