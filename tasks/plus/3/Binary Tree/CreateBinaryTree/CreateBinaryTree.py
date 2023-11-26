@@ -34,6 +34,15 @@ def CreateTree(levels: List[int]) -> Optional[TreeNode]:
 
     return root
 
+def GetTreeLevels(root: Optional[TreeNode]) -> []:
+    def bfs(root):
+        if not root: return [None]
+        return [root.val] + bfs(root.left) + bfs(root.right)
+    levels = bfs(root)
+    while levels[-1] == None:
+        del levels[-1]
+    return levels
+
 # nodes = [1, 2, 3, 4, 5]
 
 # root = TreeNode(nodes[0])
